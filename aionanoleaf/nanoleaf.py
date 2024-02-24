@@ -361,7 +361,7 @@ class Nanoleaf:
         if resp.content_length == 0:
             return self.host, 60222
 
-    async def steam(self):
+    async def stream(self):
         host, port = await self.start_streaming()
         print(host, port)
         loop = asyncio.get_running_loop()
